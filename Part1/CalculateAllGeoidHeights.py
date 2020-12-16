@@ -46,9 +46,8 @@ df = pd.DataFrame(geohighlist, columns=['Longitude', 'Latitude', 'Geoid Height E
 
 # Storing the results in CSV and tex for creating map and for report
 
-'''
+
 df.to_csv('../datafiles/Results/geoidheightswrld', sep='\t', header=False, index=False)
 # Storing in tex file to show on report
 with open('../datafiles/Results/wrldlatex.tex','w') as tf:
     tf.write(df.to_latex(index = False))
-'''
